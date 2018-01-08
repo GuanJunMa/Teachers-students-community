@@ -11,12 +11,12 @@
             <el-input placeholder="请输入内容" prefix-icon="el-icon-search"></el-input>
         </el-col>
         <el-col :span="7">
-          <el-col :span="4">1</el-col>
-          <el-col :span="4">2</el-col>
-          <el-col :span="4">3</el-col>
-          <el-col :span="4">4</el-col>
-          <el-col :span="4">5</el-col>
-          <el-col :span="4">6</el-col>
+          <el-col :span="4">板块一</el-col>
+          <el-col :span="4">板块一</el-col>
+          <el-col :span="4">板块一</el-col>
+          <el-col :span="4">板块一</el-col>
+          <el-col :span="4">板块一</el-col>
+          <el-col :span="4">板块一</el-col>
         </el-col>
         <el-col :span="2" style="">&nbsp;</el-col>
         <el-col :span="3" style="height:40px;padding:5px;">

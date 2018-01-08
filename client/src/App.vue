@@ -12,15 +12,13 @@ import FloatFoot from './components/common/FloatFoot.vue'
 import Foot from './components/common/Foot.vue'
 import NavHead from './components/common/NavHead.vue'
 import Plate from './components/common/Plate.vue'
-import Child from './components/Child.vue'
 export default {
   name: 'app',
   components: {
     FloatFoot,
     Foot,
     NavHead,
-    Plate,
-    Child
+    Plate
   },
   methods: {
     consoleMessage (data) {
