@@ -11,16 +11,26 @@
             <el-input placeholder="请输入内容" prefix-icon="el-icon-search"></el-input>
         </el-col>
         <el-col :span="7">
-          <el-col :span="4">板块一</el-col>
-          <el-col :span="4">板块一</el-col>
-          <el-col :span="4">板块一</el-col>
-          <el-col :span="4">板块一</el-col>
-          <el-col :span="4">板块一</el-col>
-          <el-col :span="4">板块一</el-col>
+          <el-col :span="4">
+            <router-link to="/">首页</router-link>
+          </el-col>
+          <el-col :span="4">
+            <router-link to="/Message">动态</router-link>
+          </el-col>
+          <el-col :span="4">
+            <router-link to="/Display">发现</router-link>
+          </el-col>
+          <el-col :span="4">
+            <router-link to="/News">新闻</router-link>
+          </el-col>
+          <el-col :span="4">
+            <router-link to="/MySelf">个人中心</router-link>
+          </el-col>
         </el-col>
         <el-col :span="2" style="">&nbsp;</el-col>
-        <el-col :span="3" style="height:40px;padding:5px;" @click.native="goToLogin()">
-          login
+        <el-col :span="3" style="height:40px;padding:5px;">
+          <router-link to="/Login">login</router-link>
+          <router-link to="/Register">register</router-link>
         </el-col>
       </el-col>
   </div>
@@ -37,6 +47,9 @@ export default {
     },
     goToHome () {
       this.$router.push('/')
+    },
+    goToMySelf () {
+      this.$router.push('Login')
     }
   }
 }
