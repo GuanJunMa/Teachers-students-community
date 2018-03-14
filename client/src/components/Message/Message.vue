@@ -1,9 +1,18 @@
 <template>
   <div>
     <div style="height:200px;">123</div>
-    <div style="height:500px;">
-        message
-    </div>
+    <el-col span="18" :offset="3" style="border:1px solid;">
+      <el-col span="16" style="border:1px solid;">
+        <el-col style="border:1px solid;height:150px;">12313</el-col>
+        <el-col style="border:1px solid;height:200px;">12313</el-col>
+        <el-col style="border:1px solid;height:200px;">12313</el-col>
+        <el-col style="border:1px solid;height:200px;">12313</el-col>
+      </el-col>
+      <el-col span="7" :offset="1" style="border:1px solid;">
+        <el-col style="border:1px solid;height:150px;"><img src="../../images/1.jpg" width="100%" height="100%" alt=""></el-col>
+        <el-col style="border:1px solid;height:2000px;"></el-col>
+      </el-col>
+    </el-col>
   </div>
 </template>
 <script>
