@@ -1,5 +1,5 @@
 <template lang="html">
-  <el-col :span="24">
+  <el-col span="24">
     <el-carousel :height="getHeight()">
         <el-carousel-item v-for="(item,index) in value" :key="item" @click.native="handleClick(index)">
           <img :src="item" style="width:100%;" class="img_class">
