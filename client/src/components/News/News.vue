@@ -20,7 +20,7 @@
       </el-col>
 
       <!-- 具体内容 -->
-      <el-col style="height:300px;">
+      <el-col style="height:100px;">
         <el-col span="16" style="border:1px solid;">
           <el-col style="border:1px solid;height:50px;">xxxxxxx</el-col>
           <!-- 具体内容 -->

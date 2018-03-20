@@ -15,76 +15,76 @@
   </div>
 </template>
 <script>
-import MockData from '../../util/mock'
-import vue from '../../images/vue.png'
-import blockchain from '../../images/blockchain.png'
-import go from '../../images/go.png'
+import MockData from "../../util/mock";
+import vue from "../../images/vue.png";
+import blockchain from "../../images/blockchain.png";
+import go from "../../images/go.png";
 export default {
-  data () {
+  data() {
     return {
       displayList: [],
       formData: {
-        name: '',
-        password: ''
+        name: "",
+        password: ""
       },
       vue: vue,
       blockchain: blockchain,
       go: go
-    }
+    };
   },
-  mounted () {
-    console.log(this.$route.path)
-    this.getDisplayList()
+  mounted() {
+    console.log(this.$route.path);
+    this.getDisplayList();
   },
   computed: {
-    showLogin () {
-      return this.$route.path === '/Login'
+    showLogin() {
+      return this.$route.path === "/Login";
     },
-    getList () {
-      return this.displayList
+    getList() {
+      return this.displayList;
     }
   },
   methods: {
-    Login () {
-      this.$router.push('/')
+    Login() {
+      this.$router.push("/");
     },
-    getDisplayList () {
-      var self = this
-      this.$http.get('http://displaydata.cn').then(
-      (successData) => {
-        self.displayList = successData.body.displayData
-      },
-      (fileData) => {
-        console.log(fileData)
-      })
+    getDisplayList() {
+      var self = this;
+      this.$http.get("http://displaydata.cn").then(
+        successData => {
+          self.displayList = successData.body.displayData;
+        },
+        fileData => {
+          console.log(fileData);
+        }
+      );
     },
-    getImage (name) {
+    getImage(name) {
       switch (name) {
-        case 'vue':
-          return this.vue
+        case "vue":
+          return this.vue;
           break;
-        case 'blockchain':
-          return this.blockchain
+        case "blockchain":
+          return this.blockchain;
           break;
-        case 'go':
-          return this.go
+        case "go":
+          return this.go;
           break;
         default:
           break;
       }
     }
   }
-}
+};
 </script>
 <style scoped>
-  .login_item {
-    width: 450px;
-    margin: 0 auto;
-  }
+.login_item {
+  width: 450px;
+  margin: 0 auto;
+}
 
-  .content-item a {
-    color: #2c3e50;
-  }
-
+.content-item a {
+  color: #2c3e50;
+}
 </style>
 

@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div style="height:200px;">123</div>
+    <div style="height:100px;"></div>
     <el-col span="20" :offset="2" style="border:1px solid;">
       <el-col span="6">
-        <el-col span="20" :offset="2" style="height:200px;background:#666666;"></el-col>
-        <el-col span="20" :offset="2">个人信息管理</el-col>
+        <el-col style="height:20px;">&nbsp;</el-col>
+        <el-col span="20" :offset="2" style="height:200px;">
+          <img src="../../images/2.jpeg" width="100%;" height="100%;" alt="">
+        </el-col>
+        <el-col span="20" :offset="2">time911</el-col>
         <el-col span="20" :offset="2" style="border-top:1px solid;margin-top:20px;">&nbsp;</el-col>
         <el-col span="20" :offset="2" style="height:500px;border:1px solid;"></el-col>
 
