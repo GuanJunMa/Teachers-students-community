@@ -8,7 +8,7 @@
           <el-row style="font-size:14px;">For students & Teacher</el-row>
         </el-col>
         <el-col class="navFind" span="5" style="height:40px;line-height:60px;">
-            <el-input placeholder="请输入内容" prefix-icon="el-icon-search"></el-input>
+            <!-- <el-input placeholder="请输入内容" prefix-icon="el-icon-search"></el-input> -->
         </el-col>
         <el-col span="7">
           <!-- <el-menu mode="horizontal" class="nav_header_col" :default-active="$route.path" style="height:60px;">
