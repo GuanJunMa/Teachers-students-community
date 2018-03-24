@@ -224,6 +224,16 @@ export default Mock.mock('http://displaydata.cn', {
       'id': 1,
       'image': 'fanyi'
     }
-  ]
+  ],
 
+  newsList: [
+    {
+      'id': 1,
+      'title': '使用git仓库搭建maven私服',
+      'time': '2018年3月2日',
+      'content': '自己编写的jar，想要通过maven方式进行分发必须发布到maven仓库。如果没有自己的私服，我们可以使用折中的办法来实现。maven客户端从maven仓库拉取构件时，实际上就是通过http协议去拉取对应仓库地址上的，对应目录中的metadata文件，查询需要的版本，就可以找到jar文件，下载到本机仓库。从而完成了依赖构件的拉取。就是说，我们可以使用任何http服务器，按照一定的目录结构部署构件，从而当做一个私服来使用。http服务器也没有？那好吧，悄悄告诉你，几乎所有的git服务都支持直接通过http访问指定文件的功能。',
+      'image': 'test',
+      'href': 'https://my.oschina.net/polly/blog/1649362'
+    }
+  ]
 })
