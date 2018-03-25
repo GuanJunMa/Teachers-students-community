@@ -235,5 +235,13 @@ export default Mock.mock('http://displaydata.cn', {
       'image': 'test',
       'href': 'https://my.oschina.net/polly/blog/1649362'
     }
-  ]
+  ],
+
+  myselfData: {
+    'name': '马冠军',
+    'type': '学生',
+    'phone': '18895326040',
+    'no': '14111206059',
+    'major': '物联网工程'
+  }
 })

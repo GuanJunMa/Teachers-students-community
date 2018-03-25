@@ -3,37 +3,37 @@
     <div style="height:200px;">123</div>
     <div style="height:700px;">
       <el-form :model="formData" status-icon ref="formData" label-width="120px" class="login_item">
-        <el-form-item label="Phone">
+        <el-form-item label="手机号">
             <el-input placeholder="请输入手机号" v-model="formData.phone" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item label="SMS_Code">
+        <el-form-item label="验证码">
           <el-input placeholder="请输入验证码" v-model="formData.sms_code">
             <el-button slot="append">获取验证码</el-button>
           </el-input>
         </el-form-item>
 
-        <el-form-item label="Type">
+        <el-form-item label="类型">
           <el-radio v-model="radio" label="1">学生</el-radio>
           <el-radio v-model="radio" label="2">老师</el-radio>
         </el-form-item>
-        <el-form-item label="Stu_ID/Tea_ID">
+        <el-form-item label="工号/学号">
             <el-input placeholder="请输入学号/工号" v-model="formData.phone" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item label="Name">
+        <el-form-item label="姓名">
             <el-input placeholder="请输入姓名" v-model="formData.phone" auto-complete="off"></el-input>
         </el-form-item>
 
-        <el-form-item label="Password">
+        <el-form-item label="密码">
             <el-input placeholder="请输入密码" v-model="formData.password" auto-complete="off"></el-input>
         </el-form-item>
-        <el-form-item label="Confirm">
+        <el-form-item label="确认">
             <el-input placeholder="请再次输入密码" type="password" v-model="formData.confirm" auto-complete="off"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" @click="Login()">Register</el-button>
+          <el-button type="primary" @click="Login()">注册</el-button>
         </el-form-item>
         <el-form-item>
-          <router-link to="/Login">Login</router-link>
+          <router-link to="/Login">登录</router-link>
         </el-form-item>
       </el-form>
     </div>
